@@ -20,6 +20,7 @@ module.exports = {
       { test: /\.s?css$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.(png|jpg|gif)$/, loader: 'url-loader' },
       { test: /\.js$/, use: { loader: 'babel-loader', options: { presets: ['env'] } } },
+      { test: /\.html$/, use: { loader: 'raw-loader' } },
     ],
   },
   plugins: [
