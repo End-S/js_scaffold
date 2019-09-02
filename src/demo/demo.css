@@ -5,3 +5,7 @@ ul ul {
 li {
 	list-style-type: '-';
 }
+
+.demo-image {
+  width: 200px;
+}

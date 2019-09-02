@@ -16,10 +16,10 @@ module.exports = {
     extensions: ['.js', '.css', '.scss', '.png', '.jpg', '.gif'],
   },
   module: {
-    loaders: [
+    rules: [
       { test: /\.s?css$/, loader: ['style-loader', 'css-loader', 'sass-loader'] },
       { test: /\.(png|jpg|gif)$/, loader: 'url-loader' },
-      { test: /\.js$/, use: { loader: 'babel-loader', options: { presets: ['env'] } } },
+      { test: /\.js$/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-env'] } } },
       { test: /\.html$/, use: { loader: 'raw-loader' } },
     ],
   },

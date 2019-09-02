@@ -1,1 +1,1 @@
-import demo from './demo/demo.js';
+import './demo/demo';
